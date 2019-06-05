@@ -108,7 +108,7 @@ Where ...
 
 ```r
 # This absolute path only works on Windows with this exact folder structure.
-df <- read.csv("X:\\health\exercise\\data\\fitbit.csv")
+df <- read.csv("X:\\health\\exercise\\data\\fitbit.csv")
 ```
 
 Becomes ...
