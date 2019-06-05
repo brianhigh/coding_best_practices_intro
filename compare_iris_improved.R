@@ -23,7 +23,7 @@ read_iris <- function(file_name) {
 
 # Compare two data frames by row, and return differences, if any.
 find_different_rows <- function(df1, df2, row_num) {
-    res <- compareEqual(df1[row_num, ], UCI_iris_2[row_num, ])
+    res <- compareEqual(df1[row_num, ], df2[row_num, ])
     res.df <- as.data.frame(t(res$detailedResult))
     res.df$row_num <- row_num
     if (!res$result == TRUE) return(res.df)
